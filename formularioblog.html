@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device, initial-scale=1.0"
+    <title> Pedidos y venta de libros de astronomia </title>
+</head>
+<body>
+
+    <header>
+        <h1> Realiza tu pedido </h1>
+    </header> 
+
+    <main> 
+        <selection>
+            <form action=""><!-- el formulario a donde la quiero mandar URL -->
+                <fieldset><!-- nos permite agrupar por campos -->
+                    <legend> Datos básicos </legend>
+
+                    Nombre(s): <input type="text" placeholder="Karen Paolet" required><br>
+                    Apellidos: <input type="text" placeholder="Torres Arrieta"required><br>
+                    Correo electrónico: <input type="email" placeholder="paolet.torrestorres@gmail.com"><br>
+                    Teléfono: <input type="tel" name="" id="" placeholder="5567891246"> 
+
+                </fieldset> 
+                <fieldset>
+                    <legend> Datos del pedido  </legend> 
+                    <span> Puedes pedir en una sola compra como minimo 1 libro y como màximo 5 </span><br>
+
+                    Número de libros: <input type="number" min="1" max="5"><br>
+                    Fecha de entrega: <input type="date">
+
+                </fieldset> 
+                <fieldset>
+                    <legend> Datos del envio </legend>
+
+                    <label for="Recoger en sucursal"> 
+                        <input id="recoger-en-sucursal" type="radio" name="tipo-de-envio"> Recoger en sucursal  
+                    </label>
+         <!-- El atributo name debe de ser igual para todos las opciones del input de tipo radio para que sòlo se pueda seleccionear una acciòn -->
+                    <label for="Envio a domicilo">
+                        <input id="Envio-a-domicilio" type="radio" name="tipo-de-envio"> Envio a domicilio
+                    </label>
+         
+                    
+                    <label for="Entrega personal"> 
+                        <input id="Entrega-personal" type="radio" name="tipo-de-envio"> Entrega personal  
+                    </label><br>
+
+                    <br>
+                    
+                    <select name="sucursales"
+                    <option value=""> Coyoacàn </option> 
+                    <option value=""> Chapultepec </option>
+                    <option value=""> Oriente </option>
+                    <option value=""> Centro </option>
+                    <option value=""> Neza </option>
+                    </select> 
+
+                    <br>
+                    <br>
+                    <!-- Casilla de verificaciòn -->
+                    <input type="checkbox" required> Acepto tèrminos y condiciones
+                    <br>
+                    <input type="submit">
+                </fieldset>
+
+                <button type="submiit"> ¡Enviar ya! </button>
+
+            </form>
+        </selection>
+    </main>
+
+
+
+
+</body>
+</html>
